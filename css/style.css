@@ -1,0 +1,332 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes duck-fly-1 {
+  0% {
+    left: -55px;
+    top: 34vh;
+  }
+  50% {
+    left: 50%;
+    top: 4vh;
+  }
+  100% {
+    left: 105%;
+    top: 12vh;
+  }
+}
+
+@keyframes duck-fly-1 {
+  0% {
+    left: -55px;
+    top: 34vh;
+  }
+  50% {
+    left: 50%;
+    top: 4vh;
+  }
+  100% {
+    left: 105%;
+    top: 12vh;
+  }
+}
+
+@-webkit-keyframes duck-fly-2 {
+  0% {
+    left: -55px;
+    top: 22vh;
+  }
+  50% {
+    left: 50%;
+    top: 15vh;
+  }
+  100% {
+    left: 105%;
+    top: 19vh;
+  }
+}
+
+@keyframes duck-fly-2 {
+  0% {
+    left: -55px;
+    top: 22vh;
+  }
+  50% {
+    left: 50%;
+    top: 15vh;
+  }
+  100% {
+    left: 105%;
+    top: 19vh;
+  }
+}
+
+@-webkit-keyframes duck-fly-3 {
+  0% {
+    left: -55px;
+    top: 8vh;
+  }
+  50% {
+    left: 50%;
+    top: 4vh;
+  }
+  100% {
+    left: 105%;
+    top: 18vh;
+  }
+}
+
+@keyframes duck-fly-3 {
+  0% {
+    left: -55px;
+    top: 8vh;
+  }
+  50% {
+    left: 50%;
+    top: 4vh;
+  }
+  100% {
+    left: 105%;
+    top: 18vh;
+  }
+}
+
+@-webkit-keyframes duck-fly-4 {
+  0% {
+    left: -55px;
+    top: 41vh;
+  }
+  50% {
+    left: 50%;
+    top: 22vh;
+  }
+  100% {
+    left: 105%;
+    top: 47vh;
+  }
+}
+
+@keyframes duck-fly-4 {
+  0% {
+    left: -55px;
+    top: 41vh;
+  }
+  50% {
+    left: 50%;
+    top: 22vh;
+  }
+  100% {
+    left: 105%;
+    top: 47vh;
+  }
+}
+
+@-webkit-keyframes duck-fly-5 {
+  0% {
+    left: -55px;
+    top: 33vh;
+  }
+  50% {
+    left: 50%;
+    top: 19vh;
+  }
+  100% {
+    left: 105%;
+    top: 8vh;
+  }
+}
+
+@keyframes duck-fly-5 {
+  0% {
+    left: -55px;
+    top: 33vh;
+  }
+  50% {
+    left: 50%;
+    top: 19vh;
+  }
+  100% {
+    left: 105%;
+    top: 8vh;
+  }
+}
+
+@-webkit-keyframes duck-fly-6 {
+  0% {
+    left: -55px;
+    top: 22vh;
+  }
+  50% {
+    left: 50%;
+    top: 32vh;
+  }
+  100% {
+    left: 105%;
+    top: 8vh;
+  }
+}
+
+@keyframes duck-fly-6 {
+  0% {
+    left: -55px;
+    top: 22vh;
+  }
+  50% {
+    left: 50%;
+    top: 32vh;
+  }
+  100% {
+    left: 105%;
+    top: 8vh;
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    top: -100vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    top: -100vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  counter-reset: count;
+  cursor: url(../img/cursor_1.svg) 2 2, auto;
+}
+
+.score {
+  display: block;
+  text-align: center;
+  position: absolute;
+  z-index: 20;
+  width: 110%;
+  left: -5%;
+}
+
+h1 {
+  padding: 1em 1em 0;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+  left: -99999999px;
+}
+
+.duck-1 {
+  position: absolute;
+  -webkit-animation: duck-fly-1 4s linear 1s infinite both;
+          animation: duck-fly-1 4s linear 1s infinite both;
+}
+
+.duck-2 {
+  position: absolute;
+  -webkit-animation: duck-fly-2 4s linear 2s infinite both;
+          animation: duck-fly-2 4s linear 2s infinite both;
+}
+
+.duck-3 {
+  position: absolute;
+  -webkit-animation: duck-fly-3 4s linear 3s infinite both;
+          animation: duck-fly-3 4s linear 3s infinite both;
+}
+
+.duck-4 {
+  position: absolute;
+  -webkit-animation: duck-fly-4 4s linear 4s infinite both;
+          animation: duck-fly-4 4s linear 4s infinite both;
+}
+
+.duck-5 {
+  position: absolute;
+  -webkit-animation: duck-fly-5 4s linear 5s infinite both;
+          animation: duck-fly-5 4s linear 5s infinite both;
+}
+
+.duck-6 {
+  position: absolute;
+  -webkit-animation: duck-fly-6 4s linear 6s infinite both;
+          animation: duck-fly-6 4s linear 6s infinite both;
+}
+
+img {
+  width: 50px;
+  cursor: url(../img/cursor_1.svg) 2 2, auto;
+}
+
+input[type="checkbox"]:checked {
+  counter-increment: count;
+}
+
+input[type="checkbox"]:checked + img {
+  visibility: hidden;
+  display: none;
+}
+
+h1::after {
+  content: ": " counter(count);
+}
+
+.game-over {
+  height: 110%;
+  width: 110%;
+  display: block;
+  text-align: center;
+  background: white;
+  pointer-events: all;
+  position: absolute;
+  top: -10px;
+  left: -5%;
+  z-index: 2;
+  -webkit-animation: appear .25s forwards;
+          animation: appear .25s forwards;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  background: repeating-linear-gradient(-45deg, #c9ff00 0, #c9ff00 5em, #20c0ff 5em, #20c0ff 10em);
+}
+
+.game-over h2 {
+  font-size: 46px;
+  padding: 1.5em .6em 1em;
+  background: white;
+  color: red;
+}
+
+@media (max-width: 414px) {
+  .game-over h2 {
+    font-size: 36px;
+    padding: 2.5em .8em 1em;
+  }
+}
+
+.play-again {
+  background: white;
+  color: #20c0ff;
+  padding: .5em 0;
+  font-size: .7em;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
