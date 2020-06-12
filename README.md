@@ -1,1 +1,1 @@
-# DuckHunting
+# DuckHunting.github.io
