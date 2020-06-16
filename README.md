@@ -1,1 +1,1 @@
-# DuckHunting.github.io
+# DuckHunting - game
